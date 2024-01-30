@@ -57,10 +57,10 @@ const createServer = async (container) => {
   ]);
 
   server.route({
-    method: "GET",
-    path: "/",
+    method: 'GET',
+    path: '/',
     handler: () => ({
-      value: "Hello dicoding!",
+      value: 'Hello dicoding 2024!',
     }),
   });
 
