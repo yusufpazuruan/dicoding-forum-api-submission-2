@@ -18,6 +18,8 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
+          export NVM_DIR=-/.nvm
+          source ~/.nvm/nvm.sh
           cd ~/dicoding-forum-api-submission-2
           git pull origin master
           npm install
